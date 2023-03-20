@@ -79,6 +79,41 @@ class VendingMachine
       end
     end
   end
+#  リファクタリング前(あたり機能なし)
+  # def buy(drink)
+  #   case drink 
+  #   when "coke"
+  #     if @sum >= 120 && @coke[:stock] >= 1
+  #       @sum = @sum - 120
+  #       @coke[:stock] -= 1
+  #       @sales += 120
+  #       puts "お買い上げありがとうございます。コーラ1本お買い上げです。"
+  #       puts "お釣りは#{@sum}円です"
+  #     else
+  #       puts "申し訳ありません。購入できません。"
+  #     end
+  #   when "water"
+  #     if @sum >= 100 && @water[:stock] >= 1
+  #       @sum = @sum - 100
+  #       @water[:stock] -= 1
+  #       @sales += 100
+  #       puts "お買い上げありがとうございます。水1本お買い上げです。"
+  #       puts "お釣りは#{@sum}円です"
+  #     else
+  #       puts "申し訳ありません。購入できません。"
+  #     end
+  #   when "redbull"
+  #     if @sum >= 200 && @redbull[:stock] >= 1
+  #       @sum = @sum - 200
+  #       @redbull[:stock] -= 1
+  #       @sales += 200
+  #       puts "お買い上げありがとうございます。レッドブル1本お買い上げです。"
+  #       puts "お釣りは#{@sum}円です"
+  #     else
+  #       puts "申し訳ありません。購入できません。"
+  #     end
+  #   end
+  # end
 
   def current_sales
     #売上表示
